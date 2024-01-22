@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>李敖電子報資料庫列表</title>
+    <base target="_blank">
+</head>
+
+<body bgcolor="black" background="../index_bk.gif" marginheight="0" scrolling="no" frameborder="no">
+    <table border="0" cellpadding="0" cellspacing="0" width="216" bgcolor="#FFFFCC">
+        <tr>
+            <td><img src="../top_im.jpg" border="0" usemap="#top_imB43E8A37" width="640" height="51"> <map name="top_imB43E8A37" id="top_imB43E8A37">
+                    <area coords="542, 2, 632, 11" shape="rect" href="../index.html" target="_self">
+                    <area coords="565, 35, 625, 46" shape="rect" href="../leevssung/index.html" target="_self">
+                    <area coords="499, 35, 553, 46" shape="rect" href="../leevslain/index.html" target="_self">
+                    <area coords="429, 37, 485, 46" shape="rect" href="../leevschen/index.html" target="_self">
+                    <area coords="360, 36, 416, 47" shape="rect" href="../principle/index.html" target="_self">
+                    <area coords="293, 36, 348, 46" shape="rect" href="../poem/index.html" target="_self">
+                    <area coords="224, 35, 278, 45" shape="rect" href="../speaker/index.html" target="_self">
+                    <area coords="154, 35, 207, 46" shape="rect" href="../speculation/index.html" target="_self">
+                    <area coords="84, 35, 139, 46" shape="rect" href="../speech/index.html" target="_self">
+                    <area coords="14, 35, 71, 46" shape="rect" href="../books/index.html" target="_self">
+                    <area coords="555, 20, 624, 31" shape="rect" href="../d_study/index.html" target="_self">
+                    <area coords="472, 19, 539, 30" shape="rect" href="../k_study/index.html" target="_self">
+                    <area coords="388, 19, 455, 30" shape="rect" href="../megaphone/index.html" target="_self">
+                    <area coords="306, 19, 371, 31" shape="rect" href="../picture/index.html" target="_self">
+                    <area coords="218, 18, 291, 30" shape="rect" href="../file/index.html" target="_self">
+                </map></td>
+        </tr>
+        <tr>
+            <td>
+                <center>
+                    <table border="0" cellpadding="0" cellspacing="4" width="580" bgcolor="#FFFFCC" height="81">
+                        <tr>
+                            <td width="572" height="57"><img src="clogo.jpg" width="180" height="45"></td>
+                        </tr>
+                        <tr>
+                            <td width="572" bgcolor="#FFFFCC" height="16">
+                                <blockquote>
+                                    　
+                                    <table border="0" width="100%" height="217">
+                                        <tr>
+                                            <td width="100%" colspan="2" height="47">
+                                                <script language="javascript">
+                                                    function InputEmail() {
+                             var ret = true;
+                             var email = document.inputbox.email.value;
+                             var news_no = document.inputbox.news_no.value;
+                             
+                             if ( ( email.length == 0 ) || (email.indexOf(',') > 0 ) || ( email.indexOf('*') > 0 ) || (email.indexOf(';') > 0 ) || (email.indexOf('@') == -1) || (email.indexOf('@') == (email.length - 1))  || (email.indexOf(' ') != -1) ) {
+                                ret = false;
+                             }
+
+                             if ( ret ) {
+                                num = 0;
+                                i = 0;
+                                while ( i < email.length) {
+                                    idx = email.indexOf('@',i);
+                                    if ( idx != -1 ) {
+                                        num++;
+                                        i = idx + 1;
+                                    } else {
+                                        i++;
+                                    }
+                                }
+
+                                if ( num != 1 ) {
+                                    ret = false;
+                                }
+
+                             }                                    
+
+
+                             if ( email.length > 0 ) {
+                               
+                                if ( ret ) { 
+                                    cur_status = 'del';
+                                    if ( document.inputbox.mstatus.checked) {
+                                         cur_status =  'insert';
+                                    }
+                                    document.inputbox.status.value = cur_status;
+
+                                    if ( (news_no == "002_008") && ( document.inputbox.mstatus.checked)) {
+                                          if ( (document.inputbox.news_desc.value).length > 0 ) { 
+                                                  return true;
+                                          } else {
+                                                  newWindow('http://enews.seed.net.tw/PUBLISH/CLASS002/NP008/inputform1.html','childWindow');
+                                                  return false;
+                                          }
+
+                                    } else {
+                                          return true; 
+                                    }
+                                } else {
+                                    alert("您的 email 輸入不合法喔!!");
+                                    return ret;
+                                }
+                             }
+                             alert("必需要輸入 email !!");
+                             return false;
+                         }
+                         //展開新的視窗
+                         function newWindow(file,window) {
+                             msgWindow=open(file,window,'resizable=no,width=400,height=250');
+
+                             if(msgWindow.opener == null) msgWindow.opener = self;
+                         }
+                        </script>
+                                                <form name="inputbox" action="http://enews.seed.net.tw/cgi-bin/input_email" method="post" onsubmit="return(InputEmail())" id="inputbox">
+                                                    <p><span><b>
+                                                                <font color="#FF0000">訂閱李敖電子報</font>
+                                                            </b></span>
+                                                        <font size="2"><span><br>
+                                                                請輸入您的Email:</span> <span><input type="text" name="email" size="20" maxlength="64" value=""> <input type="hidden" name="status" value=""> <input type="hidden" name="news_no" value="005_004"> <input type="hidden" name="news_desc" value=""> <input type="checkbox" name="mstatus" value="insert" checked>訂閱退訂 <input type="hidden" name="other_site" value="no"> <input type="submit" value="確定"> <input type="reset" value="清除"></span><br></font>
+                                                        <font color="#0000FF">
+                                                            <font size="2">（ps.<font color="#FF0000">【訂閱】</font>時請將 <img src="off.gif" width="14" height="14" align="absmiddle">打勾成 <img src="on.gif" width="14" height="14" align="absmiddle"> ， <font color="#FF0000">【退訂】</font>時請將<img src="on.gif" width="14" height="14" align="absmiddle">取消勾成 <img src="off.gif" width="14" height="14" align="absmiddle"> ）</font>
+                                                            <script>
+                                                            news_no = document.inputbox.news_no.value;
+
+                                                            if (news_no == "002_008") {
+                                                                document.write("<font color=\"#FF0000\" size=-1> <br> (ps.請輸入完整的出生年月日、時間及地點，才可以完成訂閱動作!!) </font>");
+                                                            }
+                                                            </script>
+                                                        </font>
+                                                    </p>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="38%" height="162">
+                                                <font color="#FF0000"><b>李敖電子報著作清單</b></font>
+                                                <p><a href="#199911" target="_self">一九九九年十一月</a><br>
+                                                    <a href="#199912" target="_self">一九九九年十二月</a><br>
+                                                    <a href="#200001" target="_self">二０００年一月</a><br>
+                                                    <a href="#200002" target="_self">二０００年二月</a><br>
+                                                    <a href="#200003" target="_self">二０００年三月</a><br>
+                                                    <a href="#200004" target="_self">二０００年四月</a><br>
+                                                    <a href="#200005" target="_self">二０００年五月</a><br>
+                                                    <a href="#200006" target="_self">二０００年六月</a><br>
+                                                    <a href="#200007" target="_self">二０００年七月</a><br>
+                                                    <a href="#200008" target="_self">二０００年八月</a><br>
+                                                    <a href="#200009" target="_self">二０００年九月</a><br>
+                                                    <a href="#200010" target="_self">二０００年十月</a></p>
+                                            </td>
+                                            <td width="62%" height="162">
+                                                <p>最新一期李敖電子報<br>
+                                                    <font size="2" color="#FF0000">(每日更新)</font>
+                                                </p>
+                                                <p>Seednet版李敖電子報<br>
+                                                    資料庫列表<font size="2" color="#FF0000">(每日更新)</font>
+                                                </p>
+                                                <p>Seednet李敖電子報討論區</p>
+                                                <p>
+                                                    <font size="2"><i>本表最後更新時間:2000.10.30</i></font>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </blockquote>
+                            </td>
+                        </tr>
+                    </table>
+                    <hr width="90%">
+                    <blockquote>
+                        <p align="left"><b>
+                                <font size="4" color="#FF0000" face="標楷體"><a name="199911" id="199911"></a>一九九九年十一月</font>
+                            </b></p>
+                        <p align="left"><b>1999/11/01</b><br>
+                            李敖電子報發刊詞<br>
+                            正告雷建容小姐<br>
+                            給胖妹建議<br>
+                            兩個簽名換一個簽名<br>
+                            會計心態<br>
+                            第一流的修辭境界<br>
+                            <br>
+                            <b>1999/11/02</b><br>
+                            「本身著作」不除外<br>
+                            幸福不在遠方<br>
+                            我的道歉，男女有別<br>
+                            李登輝又一次的不要臉<br>
+                            逃兵在罵逃兵<br>
+                            女子無陰毛者<br>
+                            國民黨新聞局長最怕陰毛<br>
+                            台灣是白虎星<br>
+                            李敖的「陰毛」<br>
+                            <br>
+                            <b>1999/11/03</b><br>
+                            宋美齡偷洋人養洋漢<br>
+                            宋美齡要用原子彈炸大陸<br>
+                            余光中的假詩境<br>
+                            「單向直航」去你娘<br>
+                            「單向直航」有四種<br>
+                            <br>
+                            <b>1999/11/04</b><br>
+                            剁腳筋的民主政治<br>
+                            掩目盜名<br>
+                            「心靈捕手」vs.「洋屌捕手」<br>
+                            洗腦與洗腎<br>
+                            既全倒，也半倒<br>
+                            <br>
+                            <b>1999/11/05</b><br>
+                            我最難忘的一位政治家<br>
+                            宋楚瑜「特務治國」力有未逮<br>
+                            逃兵有兩種<br>
+                            代老美抗議<br>
+                            評改余光中的「無論」<br>
+                            <br>
+                            <b>1999/11/08</b><br>
+                            致唐飛的一封信<br>
+                            再改余光中的爛詩<br>
+                            <br>
+                            <b>1999/11/09</b><br>
+                            李敖：昔之「搗蛋鬼」、今之大師<br>
+                            四歲看大<br>
+                            難道你要我當年爬到他們床底下目擊嗎？<br>
+                            <br>
+                            <b>1999/11/10</b><br>
+                            從「以夷制夷」到「以夷制中國」 ——李登輝又發賤了！<br>
+                            發了賤，還想賴嗎？<br>
+                            沒有真情的詩人<br>
+                            充氣娃娃功德無量&nbsp;<br>
+                            <br>
+                            <b>1999/11/11</b><br>
+                            陳水扁抄人家七年前的<br>
+                            教科書學台北？<br>
+                            心裡只有一個他<br>
+                            <br>
+                            <b>1999/11/12</b><br>
+                            妖僧鬧雙胞&nbsp;<br>
+                            又一個貪天之功的<br>
+                            改人者人亦改之&nbsp;<br>
+                            台大短命、校長長壽<br>
+                            <br>
+                            <b>1999/11/15</b><br>
+                            小馬哥太天真了！<br>
+                            小馬哥與「城市外交」<br>
+                            小馬哥「城市外交」不成事<br>
+                            蕭條異代卻同時<br>
+                            <br>
+                            <b>1999/11/16</b><br>
+                            許信良論李敖來台五十年<br>
+                            建國黨捧李敖<br>
+                            陳水扁給李大哥的信<br>
+                            智仁勇和錢<br>
+                            <br>
+                            <b>1999/11/17</b><br>
+                            望梅不如尋梅<br>
+                            法官鄭堤升提升了我們<br>
+                            <br>
+                            <b>1999/11/18</b><br>
+                            章孝嚴「急流勇退」？<br>
+                            檢定知識分子的一個標準<br>
+                            李敖告劉泰英自訴狀<br>
+                            跋劉泰英的道歉信<br>
+                            <br>
+                            <b>1999/11/19</b><br>
+                            與謝聰敏通話結論<br>
+                            賣假雞巴、假屄無罪<br>
+                            矽膠娃娃太貴了<br>
+                            <br>
+                            <b>1999/11/22</b><br>
+                            我的原住民意見<br>
+                            論朱惠良被新黨開除<br>
+                            男女•經濟•壓<br>
+                            王曉波教授致敖哥<br>
+                            <br>
+                            <b>1999/11/23</b><br>
+                            給李慶華小哥的一封信<br>
+                            新黨與我<br>
+                            龍應台的無恥行為<br>
+                            「明捧李登輝，暗奪釣魚島」<br>
+                            <br>
+                            <b>1999/11/24</b><br>
+                            國民黨，105個屁！<br>
+                            婚是何物，直教生死相許<br>
+                            <br>
+                            <b>1999/11/25</b><br>
+                            小馬哥「一定在什麼地方弄錯了」<br>
+                            台奸—豈可輕予罪名！<br>
+                            <br>
+                            <b>1999/11/26</b><br>
+                            為「不求甚解」進一解<br>
+                            鄧小平論「一國兩制」<br>
+                            <br>
+                            <b>1999/11/29</b><br>
+                            阿扁心胸太狹窄了！<br>
+                            鄧小平論「一國兩制」（一續）<br>
+                            <br>
+                            <b>1999/11/30</b><br>
+                            憶黃信介<br>
+                            鄧小平論「一國兩制」（二續）<br>
+                            <br></p>
+                        <p align="left">
+                            <font face="標楷體" size="4" color="#FF0000"><b><a name="199912" id="199912"></a>一九九九年十二月</b></font><br>
+                            <br>
+                            <b>1999/12/01</b><br>
+                            會錯了意，先表了情<br>
+                            我就不信什麼「人死為大」<br>
+                            鄧小平論「一國兩制」（三續）<br>
+                            <br>
+                            <b>1999/12/02</b><br>
+                            跋吳俊宏給李敖的信<br>
+                            鄧小平論「一國兩制」（四續）<br>
+                            <br>
+                            <b>1999/12/03</b><br>
+                            與山本勳論五十年<br>
+                            挑戰李敖不如反問自己<br>
+                            鄧小平論「一國兩制」（五續）<br>
+                            <br>
+                            <b>1999/12/06</b><br>
+                            為阿扁論李敖的談話進一解<br>
+                            你不知道的「一國兩制」（上）<br>
+                            <br>
+                            <b>1999/12/07</b><br>
+                            劉泰英出錢，劉家昌辦事<br>
+                            你不知道的「一國兩制」（下）<br>
+                            <br>
+                            <b>1999/12/08</b><br>
+                            李敖的最高境界<br>
+                            言論自由有三個重要條件<br>
+                            劉泰英秘密批示的文件<br>
+                            <br>
+                            <b>1999/12/09</b><br>
+                            呂秀蓮騙原住民<br>
+                            武器未開戰，單位先開戰<br>
+                            劉泰英秘密批示的文件（續完）<br>
+                            <br>
+                            <b>1999/12/10</b><br>
+                            不可誣衊敵人<br>
+                            來他媽的威爾鋼！<br>
+                            去他媽的二二八公園！<br>
+                            又見冥婚<br>
+                            拿到胡秋原第二次賠款<br>
+                            <br>
+                            <b>1999/12/13</b><br>
+                            今天教育的困境卡在哪裡？<br>
+                            徐淵濤「替李登輝卸妝」序<br>
+                            <br>
+                            <b>1999/12/14</b><br>
+                            劉兆玄、李遠哲學術迫害內幕<br>
+                            <br>
+                            <b>1999/12/15</b><br>
+                            兩張重要的照片<br>
+                            <br>
+                            <b>1999/12/16</b><br>
+                            回新聞局長趙怡老弟的一封信<br>
+                            附 趙怡來信全文<br>
+                            <br>
+                            <b>1999/12/17</b><br>
+                            原來劉泰英是宋系人馬！<br>
+                            請李敖救宋楚瑜<br>
+                            <br>
+                            <b>1999/12/20</b><br>
+                            趙怡局長的「德政」<br>
+                            Pubic 走向 Public<br>
+                            <br>
+                            <b>1999/12/21</b><br>
+                            鄧小平論「一國兩制」（續完）<br>
+                            <br>
+                            <b>1999/12/22</b><br>
+                            李登輝的婚外情<br>
+                            <br>
+                            <b>1999/12/23</b><br>
+                            劉源俊、張中訓、許清雲、葉海煙是四大可恥教授！<br>
+                            李登輝的婚外情（續完）<br>
+                            <br>
+                            <b>1999/12/24</b><br>
+                            郁慕明、趙少康豈可擁連！<br>
+                            雪柔給李敖的信<br>
+                            <br>
+                            <b>1999/12/27</b><br>
+                            難友李政一母喪題辭<br>
+                            登輝•牙醫•房事<br>
+                            <br>
+                            <b>1999/12/28</b><br>
+                            登輝•牙醫•房事（一續）<br>
+                            <br>
+                            <b>1999/12/29</b><br>
+                            魏廷朝死了<br>
+                            黃珊珊李敖通信<br>
+                            登輝•牙醫•房事（續完）<br>
+                            <br>
+                            <b>1999/12/30</b><br>
+                            答謝啟大<br>
+                            李登輝對宋楚瑜肝膽相照讚不絕口表<br>
+                            <br>
+                            <b>1999/12/31</b><br>
+                            諾貝爾文學獎候選人李敖簡介<br>
+                            <br>
+                        </p>
+                        <p align="left"><b>
+                                <font size="4" color="#FF0000" face="標楷體"><a name="200001" id="200001"></a>二０００年一月</font>
+                            </b><br>
+                            <br>
+                            <b>2000/01/03</b><br>
+                            李登輝的牙醫改名了<br>
+                            誰統一誰？<br>
+                            <br>
+                            <b>2000/01/04</b><br>
+                            高雄人缺了什麼？<br>
+                            <br>
+                            <b>2000/01/05</b><br>
+                            從蓮花中看花蓮<br>
+                            <br>
+                            <b>2000/01/06</b><br>
+                            怎樣處分國民黨黨產？<br>
+                            <br>
+                            <b>2000/01/07</b><br>
+                            「出賣台灣、買回大陸！」<br>
+                            <br>
+                            <b>2000/01/10</b><br>
+                            「出賣台灣，買回大陸！」（續完）<br>
+                            <br>
+                            <b>2000/01/11</b><br>
+                            新台南人與新鄭成功<br>
+                            <br>
+                            <b>2000/01/12</b><br>
+                            台中人，狼來了！<br>
+                            <br>
+                            <b>2000/01/13</b><br>
+                            誰騙了你和我<br>
+                            二十一世紀兩岸關係<br>
+                            <br>
+                            <b>2000/01/14</b><br>
+                            沒有愛情的文化<br>
+                            李敖與言論自由<br>
+                            <br>
+                            <b>2000/01/17</b><br>
+                            從「一國兩制」到和平統一<br>
+                            <br>
+                            <b>2000/01/18</b><br>
+                            「一個中國」正解<br>
+                            蕃薯藤網站總統候選人小檔案（李敖部分）<br>
+                            <br>
+                            <b>2000/01/19</b><br>
+                            「台灣之子」一開始就是謊話<br>
+                            <br>
+                            <b>2000/01/20</b><br>
+                            重刊「三個臭皮黨，諸葛怎樣想」<br>
+                            <br>
+                            <b>2000/01/21</b><br>
+                            筱蟬不寒蟬<br>
+                            <br>
+                            <b>2000/01/24</b><br>
+                            對台灣同胞的最後勸告<br>
+                            <br>
+                            <b>2000/01/25</b><br>
+                            對台灣同胞的最後勸告（一續）<br>
+                            <br>
+                            <b>2000/01/26</b><br>
+                            對台灣同胞的最後勸告（二續）<br>
+                            <br>
+                            <b>2000/01/27</b><br>
+                            對台灣同胞的最後勸告（續完）<br>
+                            <br>
+                            <b>2000/01/28</b><br>
+                            愛台灣不要走火入魔<br>
+                            <br>
+                            <b>2000/01/31</b><br>
+                            為戴高樂將軍「劍鋒」題辭<br>
+                            詩序蔡敏新作<br>
+                            <br></p>
+                        <p align="left"><b>
+                                <font size="4" color="#FF0000" face="標楷體"><a name="200002" id="200002"></a>二０００年二月</font>
+                            </b><br>
+                            <br>
+                            <b>2000/02/01</b><br>
+                            庸醫殺人，良醫殺？<br>
+                            <br>
+                            <b>2000/02/02</b><br>
+                            別在中山了！<br>
+                            <br>
+                            <b>2000/02/03</b><br>
+                            台大人的第二命題<br>
+                            <br>
+                            <b>2000/02/10</b><br>
+                            有關「隨扈」的兩封信<br>
+                            不再被遺忘的大屠殺——1937南京浩劫<br>
+                            <br>
+                            <b>2000/02/11</b><br>
+                            李敖答民眾（校正本）<br>
+                            <br>
+                            <b>2000/02/14</b><br>
+                            李敖答民眾（校正本）-（一續）<br>
+                            <br>
+                            <b>2000/02/15</b><br>
+                            李敖答民眾（校正本）-（二續）<br>
+                            <br>
+                            <b>2000/02/16</b><br>
+                            李敖答民眾（校正本）-（續完）<br>
+                            誰是「文化總統」？<br>
+                            <br>
+                            <b>2000/02/17</b><br>
+                            我又公布了安全局秘件<br>
+                            <br>
+                            <b>2000/02/18</b><br>
+                            連戰連戰你瞎了眼<br>
+                            阿扁騙選票，敢說不敢做<br>
+                            <br>
+                            <b>2000/02/21</b><br>
+                            阿扁騙選票，敢說不敢做-（續完）<br>
+                            <br>
+                            <b>2000/02/22</b><br>
+                            陳水扁太可恥了！<br>
+                            質疑「台灣的主張」<br>
+                            <br>
+                            <b>2000/02/23</b><br>
+                            真敦化還是假敦化<br>
+                            <br>
+                            <b>2000/02/24</b><br>
+                            世新新不新<br>
+                            <br>
+                            <b>2000/02/25</b><br>
+                            大學教育的悲哀<br>
+                            <br>
+                            <b>2000/02/28</b><br>
+                            政治硬梆梆<br>
+                            呂秀蓮被逼供了嗎？<br>
+                            <br>
+                            <b>2000/02/29</b><br>
+                            「陳水扁的真面目」引言<br>
+                            <br></p>
+                        <p align="left"><b>
+                                <font size="4" color="#FF0000" face="標楷體"><a name="200003" id="200003"></a>二０００年三月</font>
+                            </b><br>
+                            <br>
+                            <b>2000/03/01</b><br>
+                            聰明台灣人，檢驗候選人（校正本）—總統大選政見會李敖談話<br>
+                            <br>
+                            <b>2000/03/02</b><br>
+                            聰明台灣人，檢驗候選人（校正本）—總統大選政見會李敖談話-（續完）<br>
+                            陳水扁怎樣害營造商<br>
+                            陳水扁勇敢嗎？<br>
+                            <br>
+                            <b>2000/03/03</b><br>
+                            我們的未來在誰手堙H<br>
+                            <br>
+                            <b>2000/03/06</b><br>
+                            李敖的第三次義賣<br>
+                            新黨的前途，我們的前途<br>
+                            <br>
+                            <b>2000/03/07</b><br>
+                            新黨的前途，我們的前途-（續完）<br>
+                            真心愛台灣，莫鼓動戰爭（修正版）<br>
+                            <br>
+                            <b>2000/03/08</b><br>
+                            真心愛台灣，莫鼓動戰爭（修正版）-（一續）<br>
+                            <br>
+                            <b>2000/03/09</b><br>
+                            真心愛台灣，莫鼓動戰爭（修正版）-（續完）<br>
+                            連戰不可能走出李登輝路線<br>
+                            <br>
+                            <b>2000/03/10</b><br>
+                            連戰不可能走出李登輝路線-（續完）<br>
+                            <br>
+                            <b>2000/03/13</b><br>
+                            交大二０００怎麼走？<br>
+                            <br>
+                            <b>2000/03/14</b><br>
+                            李遠哲有兩個<br>
+                            改變台灣命運，要選對人（修正版）—總統大選政見會李敖談話<br>
+                            <br>
+                            <b>2000/03/15</b><br>
+                            改變台灣命運，要選對人（修正版）—總統大選政見會李敖談話（一續）<br>
+                            <br>
+                            <b>2000/03/16</b><br>
+                            改變台灣命運，要選對人（修正版）—總統大選政見會李敖談話（續完）<br>
+                            成功有兩種<br>
+                            <br>
+                            <b>2000/03/17</b><br>
+                            成功有兩種（續完）<br>
+                            從鄭板橋到板橋<br>
+                            <br>
+                            <b>2000/03/20</b><br>
+                            從鄭板橋到板橋（續完）<br>
+                            <br>
+                            <b>2000/03/21</b><br>
+                            今夕何夕知其所止<br>
+                            <br>
+                            <b>2000/03/22</b><br>
+                            李敖的四點書面談話<br>
+                            今夕何夕知其所止（續完）<br>
+                            <br>
+                            <b>2000/03/23</b><br>
+                            三重悲喜劇<br>
+                            <br>
+                            <b>2000/03/24</b><br>
+                            三重悲喜劇（續完）<br>
+                            <br>
+                            <b>2000/03/27</b><br>
+                            你不知道的陳府將軍<br>
+                            <br>
+                            <b>2000/03/28</b><br>
+                            你不知道的陳府將軍（續完）<br>
+                            <br>
+                            <b>2000/03/29</b><br>
+                            少年觀護所演講——活出你自己<br>
+                            <br>
+                            <b>2000/03/30</b><br>
+                            少年觀護所演講——活出你自己（續）<br>
+                            <br>
+                            <b>2000/03/31</b><br>
+                            少年觀護所演講——活出你自己（二續）<br>
+                            <br></p>
+                        <p align="left"><b>
+                                <font size="4" color="#FF0000" face="標楷體"><a name="200004" id="200004"></a>二０００年四月</font>
+                            </b><br>
+                            <br>
+                            <b>2000/04/03</b><br>
+                            少年觀護所演講——活出你自己（三續）<br>
+                            <br>
+                            <b>2000/04/04</b><br>
+                            少年觀護所演講——活出你自己（四續）<br>
+                            <br>
+                            <b>2000/04/05</b><br>
+                            少年觀護所演講——活出你自己（續完）<br>
+                            陳水扁政見是謊話<br>
+                            <br>
+                            <b>2000/04/06</b><br>
+                            陳水扁政見是謊話（續）<br>
+                            <br>
+                            <b>2000/04/07</b><br>
+                            陳水扁政見是謊話（二續）<br>
+                            <br>
+                            <b>2000/04/10</b><br>
+                            陳水扁政見是謊話（續完）<br>
+                            <br>
+                            <b>2000/04/11</b><br>
+                            「北京法源寺」離諾貝爾文學獎還有多遠<br>
+                            <br>
+                            <b>2000/04/12</b><br>
+                            「北京法源寺」離諾貝爾文學獎還有多遠（續）<br>
+                            <br>
+                            <b>2000/04/13</b><br>
+                            「北京法源寺」離諾貝爾文學獎還有多遠（續完）<br>
+                            <br>
+                            <b>2000/04/14</b><br>
+                            女人與政治<br>
+                            <br>
+                            <b>2000/04/17</b><br>
+                            女人與政治（續）<br>
+                            <br>
+                            <b>2000/04/18</b><br>
+                            女人與政治（二續）<br>
+                            <br>
+                            <b>2000/04/19</b><br>
+                            女人與政治（三續）<br>
+                            <br>
+                            <b>2000/04/20</b><br>
+                            女人與政治（續完）<br>
+                            李遠哲怎樣謊報危樓？——細說中央研究院近美大樓弊案<br>
+                            <br>
+                            <b>2000/04/21</b><br>
+                            李遠哲怎樣謊報危樓？——細說中央研究院近美大樓弊案（續）<br>
+                            <br>
+                            <b>2000/04/24</b><br>
+                            李遠哲怎樣謊報危樓？——細說中央研究院近美大樓弊案（二續）<br>
+                            <br>
+                            <b>2000/04/25</b><br>
+                            李遠哲怎樣謊報危樓？——細說中央研究院近美大樓弊案（續完）<br>
+                            <br>
+                            <b>2000/04/26</b><br>
+                            從不忘記我每年生日的人<br>
+                            諾貝爾文學獎不是「戈多」——鐵窗禿筆贊法源 李敖坐入文學筐<br>
+                            <br>
+                            <b>2000/04/27</b><br>
+                            陳豐偉「網路不斷革命論」<br>
+                            <br>
+                            <b>2000/04/28</b><br>
+                            陳豐偉「網路不斷革命論」（續完）<br>
+                            <br></p>
+                        <p align="left"><b>
+                                <font size="4" color="#FF0000" face="標楷體"><a name="200005" id="200005"></a>二０００年五月</font>
+                            </b><br>
+                            <br>
+                            <b>2000/05/01</b><br>
+                            「民進黨執政」？<br>
+                            一千年個屁！<br>
+                            不值得<br>
+                            <br>
+                            <b>2000/05/02</b><br>
+                            讀「讀『李敖快意恩仇錄』」<br>
+                            〔附錄〕讀「李敖快意恩仇錄」（楊照）<br>
+                            <br>
+                            <b>2000/05/03</b><br>
+                            讀「讀『李敖快意恩仇錄』」（續完）<br>
+                            <br>
+                            <b>2000/05/04</b><br>
+                            李遠哲怎樣謊報黑官？——細說中央研究院副院長弊案&nbsp;<br>
+                            <br>
+                            <b>2000/05/05</b><br>
+                            李遠哲怎樣謊報黑官？——細說中央研究院副院長弊案（續）<br>
+                            <br>
+                            <b>2000/05/08</b><br>
+                            李遠哲怎樣謊報黑官？——細說中央研究院副院長弊案（二續）<br>
+                            <br>
+                            <b>2000/05/09</b><br>
+                            李遠哲怎樣謊報黑官？——細說中央研究院副院長弊案（續完）<br>
+                            「陳文茜的虛擬人生」序<br>
+                            <br>
+                            <b>2000/05/10</b><br>
+                            「陳文茜的虛擬人生」序（續完）<br>
+                            <br>
+                            <b>2000/05/11</b><br>
+                            請勿亂評「蔣介石評傳」&nbsp;<br>
+                            【附錄一】「蔣介石評傳」序（汪榮祖）<br>
+                            <br>
+                            <b>2000/05/12</b><br>
+                            請勿亂評「蔣介石評傳」（續）<br>
+                            【附錄二】「蔣介石評傳」序（李敖）<br>
+                            <br>
+                            <b>2000/05/15</b><br>
+                            請勿亂評「蔣介石評傳」（續完）<br>
+                            【附錄二】「蔣介石評傳」序（李敖）<br>
+                            <br>
+                            <b>2000/05/16</b><br>
+                            替天行道，替新黨行道<br>
+                            <br>
+                            <b>2000/05/17</b><br>
+                            關於殷海光與李敖三文件<br>
+                            <br>
+                            <b>2000/05/18</b><br>
+                            關於殷海光與李敖三文件（續）<br>
+                            <br>
+                            <b>2000/05/19</b><br>
+                            關於殷海光與李敖三文件（續完）<br>
+                            <br>
+                            <b>2000/05/22</b><br>
+                            李敖收藏的「意淫圖」（一）<br>
+                            <br>
+                            <b>2000/05/23</b><br>
+                            李敖收藏的「意淫圖」（二）<br>
+                            <br>
+                            <b>2000/05/24</b><br>
+                            對李登輝瀆職等罪的刑事告發狀<br>
+                            【證一】李登輝「鴻禧山莊」貪污舞弊案調查報告（李敖•亓豐瑜）<br>
+                            <br>
+                            <b>2000/05/25</b><br>
+                            對李登輝瀆職等罪的刑事告發狀（續）<br>
+                            <br>
+                            <b>2000/05/26</b><br>
+                            對李登輝瀆職等罪的刑事告發狀（二續）<br>
+                            <br>
+                            <b>2000/05/29</b><br>
+                            對李登輝瀆職等罪的刑事告發狀（三續）<br>
+                            <br>
+                            <b>2000/05/30</b><br>
+                            對李登輝瀆職等罪的刑事告發狀（四續）<br>
+                            <br>
+                            <b>2000/05/31</b><br>
+                            對李登輝瀆職等罪的刑事告發狀（續完）<br>
+                            <br></p>
+                        <p align="left"><b>
+                                <font size="4" color="#FF0000" face="標楷體"><a name="200006" id="200006"></a>二０００年六月</font>
+                            </b><br>
+                            <br>
+                            <b>2000/06/01</b><br>
+                            敬告金蘭大廈EF座各位房主<br>
+                            <br>
+                            <b>2000/06/02</b><br>
+                            敬告金蘭大廈EF座各位房主（續完）<br>
+                            再次敬告金蘭大廈EF 座各位房主<br>
+                            <br>
+                            <b>2000/06/05</b><br>
+                            再次敬告金蘭大廈EF 座各位房主（續）<br>
+                            <br>
+                            <b>2000/06/06</b><br>
+                            再次敬告金蘭大廈EF 座各位房主（續完）<br>
+                            <br>
+                            <b>2000/06/07</b><br>
+                            以道義支持JOJO LIN<br>
+                            <br>
+                            <b>2000/06/08</b><br>
+                            以道義支持JOJO LIN（續）<br>
+                            <br>
+                            <b>2000/06/09</b><br>
+                            以道義支持JOJO LIN（二續）<br>
+                            <br>
+                            <b>2000/06/12</b><br>
+                            以道義支持JOJO LIN（三續）<br>
+                            <br>
+                            <b>2000/06/13</b><br>
+                            以道義支持JOJO LIN（四續）<br>
+                            <br>
+                            <b>2000/06/14</b><br>
+                            以道義支持JOJO LIN（五續）<br>
+                            <br>
+                            <b>2000/06/15</b><br>
+                            以道義支持JOJO LIN（續完）<br>
+                            <br>
+                            <b>2000/06/16</b><br>
+                            駁最高法院法官蘇茂秋、徐璧湖、曾煌圳、李慧兒、劉福來<br>
+                            <br>
+                            <b>2000/06/19</b><br>
+                            答最高法院法官范秉閣、朱建男、曾煌圳、許樹林、鄭玉山的判決書<br>
+                            <br>
+                            <b>2000/06/20</b><br>
+                            陳水扁是「中華民國」第十任總統嗎？<br>
+                            <br>
+                            <b>2000/06/21</b><br>
+                            殷巢張占——跋王曉波致敖哥書<br>
+                            <br>
+                            <b>2000/06/22</b><br>
+                            殷巢張占——拔王曉波致敖哥書（續完）<br>
+                            <br>
+                            <b>2000/06/23</b><br>
+                            李遠哲的即溶門徒<br>
+                            <br>
+                            <b>2000/06/26</b><br>
+                            美國的「天安門事件」<br>
+                            <br>
+                            <b>2000/06/27</b><br>
+                            美國的「天安門事件」（續完）<br>
+                            <br>
+                            <b>2000/06/28</b><br>
+                            老漢溜冰圖<br>
+                            <br>
+                            <b>2000/06/29</b><br>
+                            李敖的總說明<br>
+                            <br>
+                            <b>2000/06/30</b><br>
+                            李敖的總說明（一續）&nbsp;<br>
+                            <br></p>
+                        <p align="left"><b>
+                                <font size="4" color="#FF0000" face="標楷體"><a name="200007" id="200007"></a>二０００年七月</font>
+                            </b><br>
+                            <br>
+                            <b>2000/07/03</b><br>
+                            李敖的總說明（二續）<br>
+                            <br>
+                            <b>2000/07/04</b><br>
+                            李敖的總說明（三續）<br>
+                            <br>
+                            <b>2000/07/05</b><br>
+                            李敖的總說明（四續）<br>
+                            <br>
+                            <b>2000/07/06</b><br>
+                            李敖的總說明（續完）<br>
+                            <br>
+                            <b>2000/07/07</b><br>
+                            李敖對田再庭、蔡同榮、余陳月瑛、張俊宏、巴燕達魯、鍾金江、許榮棋、李承龍之流的告發告訴狀<br>
+                            <br>
+                            <b>2000/07/10</b><br>
+                            李敖對田再庭、蔡同榮、余陳月瑛、張俊宏、巴燕•達魯、鍾金江、許榮棋、李承龍之流的告發告訴狀（續完）<br>
+                            <br>
+                            <b>2000/07/11</b><br>
+                            李遠哲與司機命案<br>
+                            【附錄】司機命案調查委員會報告摘要（完整刊出）<br>
+                            <br>
+                            <b>2000/07/12</b><br>
+                            李遠哲與司機命案（一續）<br>
+                            【附錄】司機命案調查委員會報告摘要（完整刊出）<br>
+                            <br>
+                            <b>2000/07/13</b><br>
+                            李遠哲與司機命案（二續）<br>
+                            【附錄】司機命案調查委員會報告摘要（完整刊出）<br>
+                            <br>
+                            <b>2000/07/14</b><br>
+                            李遠哲與司機命案（三續）<br>
+                            【附錄】司機命案調查委員會報告摘要（完整刊出）<br>
+                            <br>
+                            <b>2000/07/17</b><br>
+                            李遠哲與司機命案（四續）<br>
+                            【附錄】司機命案調查委員會報告摘要（完整刊出）<br>
+                            <br>
+                            <b>2000/07/18</b><br>
+                            李遠哲與司機命案（續完）<br>
+                            【附錄】司機命案調查委員會報告摘要（完整刊出）<br>
+                            <br>
+                            <b>2000/07/19</b><br>
+                            李遠哲統治下的中央研究院黑幕<br>
+                            <br>
+                            <b>2000/07/20</b><br>
+                            李遠哲統治下的中央研究院黑幕（續完）<br>
+                            <br>
+                            <b>2000/07/21</b><br>
+                            湯本「假如李敖不到台灣」讀後感<br>
+                            <br>
+                            <b>2000/07/24</b><br>
+                            拆穿白道李遠哲的一些黑底<br>
+                            <br>
+                            <b>2000/07/25</b><br>
+                            拆穿白道李遠哲的一些黑底（一續）<br>
+                            <br>
+                            <b>2000/07/26</b><br>
+                            拆穿白道李遠哲的一些黑底（續完）<br>
+                            <br>
+                            <b>2000/07/27</b><br>
+                            質問張福淙<br>
+                            <br>
+                            <b>2000/07/28</b><br>
+                            質問張福淙（一續）<br>
+                            <br>
+                            <b>2000/07/31</b><br>
+                            質問張福淙（續完）<br>
+                            <br></p>
+                        <p align="left"><b>
+                                <font size="4" color="#FF0000" face="標楷體"><a name="200008" id="200008"></a>二０００年八月</font>
+                            </b><br>
+                            <br>
+                            <b>2000/08/01</b><br>
+                            媽媽的遺稿<br>
+                            <br>
+                            <b>2000/08/02</b><br>
+                            媽媽的遺稿（一續）<br>
+                            <br>
+                            <b>2000/08/03</b><br>
+                            媽媽的遺稿（二續）<br>
+                            <br>
+                            <b>2000/08/04</b><br>
+                            媽媽的遺稿（三續）<br>
+                            <br>
+                            <b>2000/08/07</b><br>
+                            媽媽的遺稿（四續）<br>
+                            <br>
+                            <b>2000/08/08</b><br>
+                            李遠哲為自己向國家多拿了不該拿的錢<br>
+                            <br>
+                            <b>2000/08/09</b><br>
+                            李遠哲為自己向國家多拿了不該拿的錢（一續）<br>
+                            <br>
+                            <b>2000/08/10</b><br>
+                            李遠哲為自己向國家多拿了不該拿的錢（續完）<br>
+                            <br>
+                            <b>2000/08/11</b><br>
+                            李遠哲夥同陳水扁以下集體違法——由中央研究院組織法違法亂修說起<br>
+                            <br>
+                            <b>2000/08/14</b><br>
+                            李遠哲夥同陳水扁以下集體違法——由中央研究院組織法違法亂修說起（續完）<br>
+                            <br>
+                            <b>2000/08/15</b><br>
+                            為紹唐大哥的遺憾進一解<br>
+                            <br>
+                            <b>2000/08/16</b><br>
+                            為紹唐大哥的遺憾進一解（續完）<br>
+                            <br>
+                            <b>2000/08/17</b><br>
+                            李遠哲，你根本沒「請假」啊！<br>
+                            <br>
+                            <b>2000/08/18</b><br>
+                            李遠哲，你根本沒「請假」啊！（續完）<br>
+                            <br>
+                            <b>2000/08/21</b><br>
+                            一位理科教授對李遠哲的糾舉<br>
+                            【附錄】東有啟明、西有長庚——追憶浦大邦先生（郭中一）<br>
+                            <br>
+                            <b>2000/08/22</b><br>
+                            李遠哲與四十幾天的大曠職案<br>
+                            <br>
+                            <b>2000/08/23</b><br>
+                            李遠哲與四十幾天的大曠職案（續完）<br>
+                            <br>
+                            <b>2000/08/24</b><br>
+                            潘毓剛論李遠哲的兩封信<br>
+                            <br>
+                            <b>2000/08/25</b><br>
+                            潘毓剛「教皇信上帝？」序</p>
+                        <p align="left"><b>2000/08/28</b><br>
+                            「李遠哲的真面目」引言<br>
+                            <br>
+                            <b>2000/08/29</b><br>
+                            我家最早的一張照片<br>
+                            <br>
+                            <b>2000/08/30</b><br>
+                            看法院有沒有魄力偵辦曾文惠&nbsp;<br>
+                            <br>
+                            <b>2000/08/31</b><br>
+                            查李遠哲的一筆爛賬</p>
+                        <p align="left">　</p>
+                        <p align="left"><b>
+                                <font size="4" color="#FF0000" face="標楷體"><a name="200009" id="200009"></a>二０００年九月</font>
+                            </b></p>
+                        <p align="left"><b>2000/09/01</b><br>
+                            查李遠哲的一筆爛帳（續完）<br>
+                            <br>
+                            <b>2000/09/04</b><br>
+                            告李遠哲弟弟狀<br>
+                            <br>
+                            <b>2000/09/05</b><br>
+                            告李遠哲弟弟狀（續完）<br>
+                            <br>
+                            <b>2000/09/06</b><br>
+                            李遠哲用人民捐款補助自己人一覽表<br>
+                            <br>
+                            <b>2000/09/07</b><br>
+                            原住民籲李錄<br>
+                            <br>
+                            <b>2000/09/08</b><br>
+                            原住民籲李錄（續完）<br>
+                            <br>
+                            <b>2000/09/11</b><br>
+                            從「皇民化」的李遠哲說起<br>
+                            <br>
+                            <b>2000/09/12</b><br>
+                            從「皇民化」的李遠哲說起（續）<br>
+                            【附錄】台灣人殖民地傷痕——「皇民化」的歷史與真相（王曉波）<br>
+                            <br>
+                            <b>2000/09/13</b><br>
+                            從「皇民化」的李遠哲說起（二續）<br>
+                            【附錄】台灣人殖民地傷痕——「皇民化」的歷史與真相（王曉波）<br>
+                            <br>
+                            <b>2000/09/14</b><br>
+                            從「皇民化」的李遠哲說起（三續）<br>
+                            【附錄】台灣人殖民地傷痕——「皇民化」的歷史與真相（王曉波）<br>
+                            <br>
+                            <b>2000/09/15</b><br>
+                            從「皇民化」的李遠哲說起（續完）<br>
+                            【附錄】台灣人殖民地傷痕——「皇民化」的歷史與真相（王曉波）<br>
+                            <br>
+                            <b>2000/09/18</b><br>
+                            斥中央選舉委員會<br>
+                            <br>
+                            <b>2000/09/19</b><br>
+                            斥中央選舉委員會（二續）<br>
+                            <br>
+                            <b>2000/09/20</b><br>
+                            斥中央選舉委員會（三續）<br>
+                            <br>
+                            <b>2000/09/21</b><br>
+                            斥中央選舉委員會（續完）<br>
+                            <br>
+                            <b>2000/09/22</b><br>
+                            斥黃石城之流</p>
+                        <p align="left"><b>2000/09/25</b><br>
+                            校勘郭冠英</p>
+                        <p align="left"><b>2000/09/26</b><br>
+                            李遠哲要不要把自己送檢調？<br>
+                            <br>
+                            <b>2000/09/27</b><br>
+                            小記一九三五名人<br>
+                            <br>
+                            <b>2000/09/28</b><br>
+                            讀「巫咒邪術對人間的為害」<br>
+                            <br>
+                            <b>2000/09/29</b><br>
+                            讀「巫咒邪術對人間的為害」（一續）</p>
+                        <p align="left">　</p>
+                        <p align="left"><b>
+                                <font size="4" color="#FF0000" face="標楷體"><a name="200010" id="200010"></a>二０００年十月</font>
+                            </b></p>
+                        <p align="left"><b>2000/10/02</b><br>
+                            讀「巫咒邪術對人間的為害」（二續）<br>
+                            <br>
+                            <b>2000/10/03</b><br>
+                            讀「巫咒邪術對人間的為害」（續完）<br>
+                            <br>
+                            <b>2000/10/04</b><br>
+                            關於王永慶父子密使的秘件<br>
+                            <br>
+                            <b>2000/10/05</b><br>
+                            關於王永慶父子密使的秘件（一續）<br>
+                            <br>
+                            <b>2000/10/06</b><br>
+                            關於王永慶父子密使的秘件（二續）<br>
+                            <br>
+                            <b>2000/10/09</b><br>
+                            關於王永慶父子密使的秘件（三續）<br>
+                            <br>
+                            <b>2000/10/10</b><br>
+                            關於王永慶父子密使的秘件（四續）<br>
+                            <br>
+                            <b>2000/10/11</b><br>
+                            關於王永慶父子密使的秘件（五續）<br>
+                            <br>
+                            <b>2000/10/12</b><br>
+                            關於王永慶父子密使的秘件（續完）<br>
+                            誰怕王永慶？<br>
+                            <br>
+                            <b>2000/10/13</b><br>
+                            誰怕王永慶？（續完）<br>
+                            <br>
+                            <b>2000/10/16</b><br>
+                            青山見我樓雜記之一<br>
+                            <br>
+                            <b>2000/10/17</b><br>
+                            關於王永慶父子密使的另一批秘件<br>
+                            <br>
+                            <b>2000/10/18</b><br>
+                            關於王永慶父子密使的另一批秘件（續完）<br>
+                            <br>
+                            <b>2000/10/19</b><br>
+                            秦慧珠解讀王永慶父子密使案<br>
+                            <br>
+                            <b>2000/10/20</b><br>
+                            秦慧珠解讀王永慶父子密使案（一續）<br>
+                            <br>
+                            <b>2000/10/23</b><br>
+                            秦慧珠解讀王永慶父子密使案（二續）<br>
+                            <br>
+                            <b>2000/10/24</b><br>
+                            秦慧珠解讀王永慶父子密使案（三續）<br>
+                            <br>
+                            <b>2000/10/25</b><br>
+                            秦慧珠解讀王永慶父子密使案（續完）<br>
+                            <br>
+                            <b>2000/10/26</b><br>
+                            訴願書補件——答覆新官僚邱義仁<br>
+                            <br>
+                            <b>2000/10/27</b><br>
+                            訴願書補件——答覆新官僚邱義仁（續完）</p>
+                    </blockquote>
+                    <center>
+                        <p>　</p>
+                    </center>
+                    <font size="2"></font>
+                    <hr width="600">
+                </center>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
